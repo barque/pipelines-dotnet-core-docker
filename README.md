@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/barque1010/pipelines-dotnet-core-docker/_apis/build/status/barque.pipelines-dotnet-core-docker?branchName=master)](https://dev.azure.com/barque1010/pipelines-dotnet-core-docker/_build/latest?definitionId=1&branchName=master)
 
 # Contributing
 
