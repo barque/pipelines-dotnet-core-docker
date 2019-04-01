@@ -12,6 +12,7 @@ pool:
 variables:
   dockerId: 'barque1010'  # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
   imageName: 'pipelines-dotnet-core-docker'  # Replace with the name of the image you want to publish
+  pswd: '#a1234512345b'
 
 steps:
 - script: |
