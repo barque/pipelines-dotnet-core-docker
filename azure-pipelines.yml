@@ -16,7 +16,7 @@ variables:
 steps:
 - script: |
     docker build -t $(dockerId)/$(imageName) .
-    docker login -u "barque1010" -p $(pswd)
+    docker login -u $(username) -p $(pswd)
     docker tag $(imageName) $(dockerId)/$(imageName)
     docker push $(dockerId)/$(imageName)
   env:
