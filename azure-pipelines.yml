@@ -1,12 +1,13 @@
 variables:
   # "username and pswd are defined in setting/variable
   #Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
+  dockerid: "barque1010"
   imageName: "pipelines-dotnet-core-docker"  # Replace with the name of the image you want to publish
 
 steps:
 - script: |
-    docker build -t $(username)/$(imageName) .
+    docker build -t $(dockerid)/$(imageName) .
     docker login -u $(username) -p $(pswd)
-    docker push $(username)/$(imageName)
+    docker push $(dockerid)/$(imageName)
   env:
     pswd: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
