@@ -15,6 +15,11 @@ namespace pipelines_dotnet_core_docker.Controllers
             return View();
         }
 
+        public IActionResult Barque()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
